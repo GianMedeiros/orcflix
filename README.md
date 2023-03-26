@@ -3,7 +3,7 @@ Projeto de uma aplicação WEB para o bootcamp da orcestra
 
 ## Organização de requisitos:
 
-Link do trello: [https://trello.com/invite/b/21ZSIqN9/ATTI968256b917649ed7d6d2eb7dae45eb01B9007E95/kanban-cinefilos](https://trello.com/invite/b/21ZSIqN9/ATTI968256b917649ed7d6d2eb7dae45eb01B9007E95/kanban-cinefilos)
+Link do [trello](https://trello.com/invite/b/21ZSIqN9/ATTI968256b917649ed7d6d2eb7dae45eb01B9007E95/kanban-cinefilos):
 
 ## Organizações de Branches:
 
