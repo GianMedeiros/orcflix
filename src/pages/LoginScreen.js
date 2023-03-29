@@ -11,7 +11,7 @@ export default function LoginScreen() {
     };
     return (
         <>
-            <h1>Orc'flix</h1>
+            <h1>ORC'FLIX</h1>
             <div className={styles.caixa_login}>
                 <h2>Login</h2>
                 <form>
