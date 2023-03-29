@@ -11,8 +11,12 @@ app.get('/', (req, res) => {
   res.send('sucessaaaaçooo')
 });
 
-app.post('/login', (request, response) => {
-  const { email, senha} = request.body;
+app.get('movie/:id', (req, res) => { 
+  const { id } = req.params;
+});
+
+app.post('/login', (req, res) => {
+  const { email, senha} = req.body;
 
   const itemTeste = {
     email,
