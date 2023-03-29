@@ -1,6 +1,6 @@
-import CardFilme from "./CardFilme";
+import MovieCard from "./MovieCard";
 
-export default function CaixaFilmes() {
+export default function MoviesBox() {
     // Esse componente deve receber os filmes que serao listados e retornar um
     // container com os card de filme agrupados para usar esse componente na 
     // Tela de busca onde os cards exibidos serao os do filtro, na tela de 
@@ -11,12 +11,12 @@ export default function CaixaFilmes() {
     // em caixa mas sim em bandeija (tipo a da netflix)
     return (
         <>
-            <CardFilme />
-            <CardFilme />
-            <CardFilme />
-            <CardFilme />
-            <CardFilme />
-            <CardFilme />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
+            <MovieCard />
         </>
     );
 }

@@ -1,6 +1,6 @@
-import styles from "../styles/CardFilme.module.css"
+import styles from "../styles/MovieCard.module.css"
 
-export default function CardFilme() {
+export default function MovieCard() {
     // Esse componente deve conter o card do filme aqueles menores 
     // que levam para a tela de detalhe de filme. Alem de ter o poster do filme deve ter o seu nome, 
     // e principalmente o icone de assistir mais tarde e tambem deve ser exibido no lugar o icone de 

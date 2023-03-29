@@ -35,4 +35,4 @@ Para desenvover uma feature/requisito, você deve:
 
 **Devel:** É a branch base para o desenvolvimento e recebe a maior frequência de atualizações do projeto. Ela só recebe Pull Requests das branches temporarias de requisito.
 
-**Branch de requisito:** Cada requisito é desenvolvido em sua própria branch, criada a partir da branch Devel. Essas branches devem seguir o padrão de nomenclatura Ex: RF01-TelaLogin.
+**Branch de requisito:** Cada requisito é desenvolvido em sua própria branch, criada a partir da branch Devel. Essas branches devem seguir o padrão de nomenclatura Ex: RF01-LoginScreen.

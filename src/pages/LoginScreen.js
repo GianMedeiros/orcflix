@@ -1,7 +1,7 @@
 import { useState } from "react";
-import styles from "../styles/TelaLogin.module.css"
+import styles from "../styles/LoginScreen.module.css"
 
-export default function TelaLogin() {
+export default function LoginScreen() {
     const [user, setUser] = useState("");
     const [password, setPassword] = useState("");
 
