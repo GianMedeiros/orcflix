@@ -1,20 +1,23 @@
-import { useState } from "react";
+import { useState } from "react"
+
 import styles from "../styles/LoginScreen.module.css"
 
 export default function LoginScreen() {
-    const [user, setUser] = useState("");
-    const [password, setPassword] = useState("");
+    const [user, setUser] = useState("")
+    const [password, setPassword] = useState("")
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        //  wip
-    };
+        //  Agora eu tenho os valores de user e password
+        console.log({ user, password })
+    }
+
     return (
         <>
             <h1>Orc'flix</h1>
             <div className={styles.caixa_login}>
                 <h2>Login</h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <p>Usuário:</p>
                     <input
                         className={styles.campo_texto}
@@ -27,11 +30,13 @@ export default function LoginScreen() {
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}>
                     </input>
-                    <button className={styles.botao_entrar}>Entrar</button>
+                    <button
+                        type="submit"
+                        className={styles.botao_entrar}>
+                        Entrar
+                    </button>
                 </form>
-                <span>
-                    Não tem conta?<b>Criar conta.</b>
-                </span>
+                <span>Não tem conta?<b>Criar conta.</b></span>
             </div>
         </>
     )
