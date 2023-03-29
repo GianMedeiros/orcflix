@@ -8,9 +8,9 @@ export default function Home() {
                 Hello tela inicial
             </h1>
             <SearchBox />
-            <MoviesBox modoBandeija="on" />
-            <MoviesBox modoBandeija="on" />
-            <MoviesBox modoBandeija="on" />
+            <MoviesBox isCarousel={true} />
+            <MoviesBox isCarousel={true} />
+            <MoviesBox isCarousel={true} />
         </>
     );
 }
