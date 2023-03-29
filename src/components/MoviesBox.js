@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
-
-export default function MoviesBox() {
+// Recebe um array de objetos de filmes
+export default function MoviesBox(movies, is) {
     // Esse componente deve receber os filmes que serao listados e retornar um
     // container com os card de filme agrupados para usar esse componente na 
     // Tela de busca onde os cards exibidos serao os do filtro, na tela de 
@@ -10,13 +10,8 @@ export default function MoviesBox() {
     // mas para isso é necessario um condicional para nao criar os elementos 
     // em caixa mas sim em bandeija (tipo a da netflix)
     return (
-        <>
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-            <MovieCard />
-        </>
+        <div>
+            {movies.length > 0 && movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+        </div>
     );
 }

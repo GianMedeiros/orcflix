@@ -5,4 +5,6 @@ e deve ter o mesmo nome do componnete ou pagina que esta estilizando */
 /* Tambem va ate o componte MovieCard para verificar como a estilizacao foi chamada */
 .card:hover {
     color: var(--destaque-primaria);
+    transform: scale(1.2);
+    transition: all 0.2 ease-in-out;
 }
