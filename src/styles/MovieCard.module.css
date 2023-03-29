@@ -1,0 +1,8 @@
+/* Esse é um exemplo de como estilizar um componte 
+ele deve ser feito em um .module.css dentro da pasta stiles
+e deve ter o mesmo nome do componnete ou pagina que esta estilizando */
+
+/* Tambem va ate o componte MovieCard para verificar como a estilizacao foi chamada */
+.card:hover {
+    color: var(--destaque-primaria);
+}
