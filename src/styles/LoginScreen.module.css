@@ -1,7 +1,16 @@
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+
 .campo_texto {
     width: 296px;
     height: 30px;
-
+    margin-bottom: 2em;
     background: var(--destaque-secundaria);
     border-radius: 5px;
 }
@@ -9,7 +18,7 @@
 .caixa_login {
     max-width: 654px;
     height: 538px;
-
+    margin: auto;
     background: var(--fundo-claro);
     border-radius: 20px;
 
@@ -21,10 +30,17 @@
 }
 
 .botao_entrar {
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
     width: 150px;
     height: 42px;
 
     background: var(--destaque-primaria);
     border-radius: 5px;
     display: block;
+}
+
+b {
+    color: var(--destaque-primaria)
 }
