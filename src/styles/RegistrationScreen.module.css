@@ -1,0 +1,56 @@
+h1 {
+    text-align: center;
+    margin: 0.5em;
+}
+
+input {
+    margin-left: 1em;
+}
+
+.caixa_registro {
+    margin: auto;
+    max-width: 654px;
+    height: 538px;
+
+    background: var(--fundo-claro);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.botao_criar_conta {
+    width: 150px;
+    height: 42px;
+    background: var(--destaque-primaria);
+    border-radius: 5px;
+    display: block;
+}
+
+.caixa_registro h2 {
+    margin-bottom: 1em;
+}
+
+.botao_voltar {
+    width: 150px;
+    height: 42px;
+    background: var(--fundo-escuro);
+    border-radius: 5px;
+    display: block;
+}
+
+.divisoes {
+    margin: 1em;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.botoes {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: row-reverse;
+}
