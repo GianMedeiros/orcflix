@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link, Outlet } from "react-router-dom"
 
 import styles from "../styles/LoginScreen.module.css"
 
@@ -36,7 +37,10 @@ export default function LoginScreen() {
                         Entrar
                     </button>
                 </form>
-                <span>Não tem conta?<b>Criar conta.</b></span>
+                <Link to="/new">
+                    <span>Não tem conta?<b>Criar conta.</b></span>
+                </Link>
+                <Outlet />
             </div>
         </>
     )
