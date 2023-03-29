@@ -10,8 +10,6 @@ export default function UserScreen() {
             <MoviesBox />
             <MoviesBox />
             <MoviesBox />
-
         </>
-
     );
 }
