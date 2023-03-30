@@ -9,8 +9,8 @@
     padding: 3em;
     margin: 3em;
     height: calc(100vh - 13em);
-    min-height: 32em;
-    min-width: 46em;
+    min-height: 28em;
+    min-width: 47em;
     display: flex;
     justify-content: space-between;
 }
@@ -24,7 +24,7 @@
     width: 20em;
     max-width: 20em;
     min-width: 10em;
-    height: 1.2em;
+    height: 30px;
     max-height: 5em;
     margin-bottom: 0.5em;
 }
@@ -44,8 +44,8 @@
 
 .botao_editar {
     background-color: var(--destaque-primaria);
-    padding: 0.3em;
-    width: 7em;
+    padding: 0.3em 1em 0.3em 1em;
+    min-width: 7em;
     margin: 0;
 }
 
@@ -54,4 +54,12 @@
     padding: 0.3em;
     width: 5em;
     margin: 0;
+}
+
+input {
+    font-size: var(--font-size-p);
+    font-family: "Inter";
+    margin-bottom: 0.5em;
+    display: flex;
+    width: 20em;
 }

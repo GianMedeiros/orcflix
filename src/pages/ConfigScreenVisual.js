@@ -16,15 +16,15 @@ export default function ConfigScreenVisual() {
                     <div className={styles.dados}>
                         <div className={styles.conta}>
                             <h3>Conta:</h3>
-                            <p>Nome:</p>
-                            <div className={styles.dados_do_usuario}>Dados</div>
-                            <p>Sobrenome:</p>
-                            <div className={styles.dados_do_usuario}>Dados</div>
-                            <p>Nome de usuário:</p>
-                            <div className={styles.dados_do_usuario}>Dados</div>
-                            <p>Descrição:</p>
-                            <div className={styles.dados_do_usuario}>Dados</div>
-                            <button className={styles.botao_editar}>Salvar Alterações</button>
+                            <form>
+                                <p>Nome completo:</p>
+                                <input></input>
+                                <p>Nome de usuário:</p>
+                                <input></input>
+                                <p>Senha:</p>
+                                <input></input>
+                                <button className={styles.botao_editar}>Salvar Alterações</button>
+                            </form>
                         </div>
                         <div className={styles.voltar}>
                             <button className={styles.botao_voltar}
@@ -39,13 +39,11 @@ export default function ConfigScreenVisual() {
                     <div className={styles.dados}>
                         <div className={styles.conta}>
                             <h3>Conta:</h3>
-                            <p>Nome:</p>
-                            <div className={styles.dados_do_usuario}>Dados</div>
-                            <p>Sobrenome:</p>
+                            <p>Nome completo:</p>
                             <div className={styles.dados_do_usuario}>Dados</div>
                             <p>Nome de usuário:</p>
                             <div className={styles.dados_do_usuario}>Dados</div>
-                            <p>Descrição:</p>
+                            <p>Senha:</p>
                             <div className={styles.dados_do_usuario}>Dados</div>
                             <button className={styles.botao_editar}
                                 onClick={() => { setIsEditing(true) }}>

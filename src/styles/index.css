@@ -74,7 +74,7 @@ button {
 }
 
 input {
-  width: 296px;
+  min-width: 296px;
   height: 30px;
   border-style: none;
   background: var(--destaque-secundaria);
