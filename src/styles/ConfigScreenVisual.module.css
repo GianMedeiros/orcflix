@@ -1,0 +1,57 @@
+.titulo {
+    font-size: var(--font-size-h2);
+    margin: 1em;
+}
+
+.bloco_fundo {
+    background-color: var(--fundo-claro);
+    border-radius: 20px;
+    padding: 3em;
+    margin: 3em;
+    height: calc(100vh - 13em);
+    min-height: 32em;
+    min-width: 46em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados_do_usuario {
+    font-family: 'Inter';
+    font-size: var(--font-size-p);
+    background-color: var(--fundo-escuro);
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    width: 20em;
+    max-width: 20em;
+    min-width: 10em;
+    height: 1.2em;
+    max-height: 5em;
+    margin-bottom: 0.5em;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.botao_excluir {
+    background-color: var(--destaque-terciaria);
+    margin: 0;
+    padding: 0.3em;
+    width: 7em;
+}
+
+.botao_editar {
+    background-color: var(--destaque-primaria);
+    padding: 0.3em;
+    width: 7em;
+    margin: 0;
+}
+
+.botao_voltar {
+    background-color: var(--fundo-escuro);
+    padding: 0.3em;
+    width: 5em;
+    margin: 0;
+}

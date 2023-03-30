@@ -70,6 +70,7 @@ button {
   border-radius: 5px;
   border-style: none;
   margin-left: 1em;
+  cursor: pointer;
 }
 
 input {
@@ -78,4 +79,6 @@ input {
   border-style: none;
   background: var(--destaque-secundaria);
   border-radius: 5px;
+  outline: none;
+  padding-left: 1em;
 }
