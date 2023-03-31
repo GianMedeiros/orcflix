@@ -1,7 +1,7 @@
-import SearchBox from "../components/SearchBox";
-import MoviesBox from "../components/MoviesBox";
+import SearchBox from "../components/SearchBox"
+import MoviesBox from "../components/MoviesBox"
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"
 
 const moviesURL = "https://api.themoviedb.org/3"  // TODO: Talvez mover para um .env
 const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
@@ -11,24 +11,28 @@ export default function Home() {
     const [actionMovies, setActionMovies] = useState([])
     const [documentariesMovies, setDocumentariesMovies] = useState([])
 
-    const getMoviesList = async (url) => {
-        const res = await fetch(url)
-        const data = await res.json()
-        return data.results
+    const getMoviesList = (url) => {
+        return fetch(url)
+            .then(res => res.json())
+            .then(data => data.results)
     }
 
     useEffect(() => {
         const popularMoviesURL = `${moviesURL}/movie/top_rated?${apiKey}`
         getMoviesList(popularMoviesURL)
-            .then((data) => { setPolularMovies(data) })
+            .then(data => setPolularMovies(data))
+            .catch(error => console.log(error))
 
         const actionMoviesURL = `${moviesURL}/discover/movie?${apiKey}&with_genres=28`
         getMoviesList(actionMoviesURL)
-            .then((data) => { setActionMovies(data) })
+            .then(data => setActionMovies(data))
+            .catch(error => console.log(error))
+
 
         const documentariesMoviesURL = `${moviesURL}/discover/movie?${apiKey}&with_genres=99`
         getMoviesList(documentariesMoviesURL)
-            .then((data) => { setDocumentariesMovies(data) })
+            .then(data => setDocumentariesMovies(data))
+            .catch(error => console.log(error))
     }, [])
 
     return (
