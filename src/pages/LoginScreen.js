@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import { Link } from "react-router-dom"
+
 import styles from "../styles/LoginScreen.module.css"
 
 export default function LoginScreen() {
@@ -10,6 +12,7 @@ export default function LoginScreen() {
         e.preventDefault()
         //  Agora eu tenho os valores de user e password
         console.log({ user, password })
+
     }
 
     return (
@@ -33,12 +36,19 @@ export default function LoginScreen() {
                     <button
                         type="submit"
                         className={styles.botao_entrar}>
-                        Entrar
+                        <Link 
+                            to="/home">
+                            Entrar
+                        </Link>
                     </button>
                 </form>
-                <a href="/new">
-                    <span>Não tem conta?<b>Criar conta.</b></span>
-                </a>
+                <p >
+                    Não tem conta? 
+                    <Link 
+                        to="/register">
+                        Criar conta.
+                    </Link>
+                </p>
             </div>
         </>
     )

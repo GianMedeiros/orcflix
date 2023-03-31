@@ -7,9 +7,9 @@ export default function UserScreen() {
                 Hello tela de usuario
             </h1>
 
+            {/* <MoviesBox />
             <MoviesBox />
-            <MoviesBox />
-            <MoviesBox />
+            <MoviesBox /> */}
         </>
     );
 }

@@ -8,12 +8,12 @@ export default function MovieDetailScreen() {
             <h1>
                 Hello tela de detalhe do filmes
             </h1>
-            <SearchBox />
+            {/* <SearchBox />
             <MoviesBox />
             <ReviewBox />
             <ReviewBox />
             <ReviewBox />
-            <ReviewBox />
+            <ReviewBox /> */}
         </>
     );
 }
