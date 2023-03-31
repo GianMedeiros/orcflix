@@ -8,11 +8,7 @@ export default function RegistrationScreen() {
                 <h2>Crie sua conta</h2>
                 <form>
                     <div className={styles.divisoes}>
-                        <p>Nome:</p>
-                        <input></input>
-                    </div>
-                    <div className={styles.divisoes}>
-                        <p>Sobrenome:</p>
+                        <p>Nome completo:</p>
                         <input></input>
                     </div>
                     <div className={styles.divisoes}>
