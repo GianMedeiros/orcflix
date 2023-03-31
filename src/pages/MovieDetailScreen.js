@@ -26,7 +26,7 @@ export default function MovieDetailScreen() {
     useEffect(() => {
         const movieUrl = `${moviesURL}${id}?${apiKey}`
         getMovie(movieUrl)
-    }, [])
+    }, [id])
 
     return (
         movie && (
