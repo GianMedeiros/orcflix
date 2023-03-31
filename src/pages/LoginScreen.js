@@ -36,7 +36,9 @@ export default function LoginScreen() {
                         Entrar
                     </button>
                 </form>
-                <span>Não tem conta?<b>Criar conta.</b></span>
+                <a href="/new">
+                    <span>Não tem conta?<b>Criar conta.</b></span>
+                </a>
             </div>
         </>
     )
