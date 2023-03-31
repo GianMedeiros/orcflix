@@ -1,57 +1,38 @@
-import SearchBox from "../components/SearchBox";
-import ReviewBox from "../components/ReviewBox";
-import MoviesBox from "../components/MoviesBox"; // Para os Semelhantes
+import SearchBox from "../components/SearchBox"
+import ReviewBox from "../components/ReviewBox"
+// import MoviesBox from "../components/MoviesBox" // TODO: Para os Semelhantes
 
 import styles from '../styles/MovieDetailScreen.module.css'
 
 
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react"
 
 const moviesURL = "https://api.themoviedb.org/3/movie/" // TODO: Talvez mover para um .env
-const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
 const imagesURL = "https://image.tmdb.org/t/p/original"
+const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
 
 export default function MovieDetailScreen() {
-
-
     const { id } = useParams()
     const [movie, setMovie] = useState(null)
 
-    const getMovie = async (url) => {
-        const res = await fetch(url)
-        const data = await res.json()
-        console.log(data);
-        setMovie(data)
+    const getMovie = (url) => {
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setMovie(data))
+            .catch(error => console.log(error));
     }
-    // const getMovie = (url) => {
-    //     fetch(url)
-    //       .then(res => res.json())
-    //       .then(data => setMovie(data))
-    //       .catch(error => console.log(error));
-    //   }
 
     useEffect(() => {
-        const movieUrl = `${moviesURL}${id}?${apiKey}`;
-        getMovie(movieUrl);
-    }, []);
+        const movieUrl = `${moviesURL}${id}?${apiKey}`
+        getMovie(movieUrl)
+    }, [])
 
-    // return (
-    //     <>
-    //         <h1>{movie.title}</h1>
-    //         
-    //         <ReviewBox />
-    //         <ReviewBox />
-    //         <ReviewBox />
-    //         <ReviewBox />
-    //     </>
-    // );
     return (
         movie && (
             <>
                 <SearchBox />
                 <div className={styles.movie_box}>
-
 
                     <div className={styles.title}>
                         <h3>{movie.title}</h3>
@@ -74,14 +55,12 @@ export default function MovieDetailScreen() {
                     <div className={styles.poster}>
                         <img src={imagesURL + movie.backdrop_path} alt={movie.title} />
                     </div>
-
                 </div>
 
                 <div className={styles.comments_box}>
                     <ReviewBox />
                 </div>
-
             </>
         )
-    );
+    )
 }

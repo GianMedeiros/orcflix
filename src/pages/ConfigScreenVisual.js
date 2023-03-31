@@ -1,17 +1,15 @@
-import { useState } from "react";
+import { useState } from "react"
 import styles from "../styles/ConfigScreenVisual.module.css"
 
 export default function ConfigScreenVisual() {
     const [isEditing, setIsEditing] = useState(false)
-    // Essa tela tem duas versoes a no modo de edicao e 
-    // a no modo de visualizacao, ver prototipo no figma
+
     return (
         <>
             <div className={styles.titulo}>
                 <h2>Configurações</h2>
             </div>
             {isEditing ? // Tela caso esteja editando o perfil
-                //TODO: Substituir as div por input e criar um forms
                 <div className={styles.bloco_fundo}>
                     <div className={styles.dados}>
                         <div className={styles.conta}>
@@ -60,5 +58,5 @@ export default function ConfigScreenVisual() {
                 </div>
             }
         </>
-    );
+    )
 }
