@@ -1,5 +1,5 @@
-import SearchBox from "../components/SearchBox"
-import MoviesBox from "../components/MoviesBox"
+import SearchBox from "../components/SearchBox";
+import MoviesBox from "../components/MoviesBox";
 
 export default function SeachScreen() {
     return (
