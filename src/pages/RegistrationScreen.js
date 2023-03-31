@@ -34,7 +34,5 @@ export default function RegistrationScreen() {
                 </form>
             </div>
         </>
-
-
     );
 }
