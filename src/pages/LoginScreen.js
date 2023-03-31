@@ -27,6 +27,7 @@ export default function LoginScreen() {
                     <p>Senha:</p>
                     <input
                         className={styles.campo_texto}
+                        type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}>
                     </input>
@@ -36,7 +37,7 @@ export default function LoginScreen() {
                         Entrar
                     </button>
                 </form>
-                <a href="/new">
+                <a href="/register">
                     <span>Não tem conta?<b>Criar conta.</b></span>
                 </a>
             </div>
