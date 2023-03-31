@@ -7,8 +7,8 @@ export default function SeachScreen() {
             <h1>
                 Hello tela de busca
             </h1>
-            <SearchBox />
-            <MoviesBox />
+            {/* <SearchBox />
+            <MoviesBox /> */}
         </>
     );
 }

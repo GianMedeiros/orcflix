@@ -1,6 +1,8 @@
 import { useState } from "react"
 import styles from "../styles/ConfigScreenVisual.module.css"
 
+import { Link } from "react-router-dom"
+
 export default function ConfigScreenVisual() {
     const [isEditing, setIsEditing] = useState(false)
 
@@ -49,7 +51,13 @@ export default function ConfigScreenVisual() {
                             </button>
                         </div>
                         <div className={styles.voltar}>
-                            <button className={styles.botao_voltar}>Voltar</button>
+                            <button 
+                                className={styles.botao_voltar}>
+                                <Link 
+                                    to="/home">
+                                    Voltar
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     <div className={styles.excluir}>
