@@ -1,9 +1,9 @@
 import styles from "../styles/MovieCard.module.css"
 
-const imagesURL = "https://image.tmdb.org/t/p/w160/" // TODO: Talvez mover para um .env
+const imagesURL = "https://image.tmdb.org/t/p/w500" // TODO: Talvez mover para um .env
 
 // Recebe um objeto movie como parametro
-export default function MovieCard(movie) {
+export default function MovieCard({movie}) {
     // Esse componente deve conter o card do filme aqueles menores 
     // que levam para a tela de detalhe de filme. Alem de ter o poster do filme deve ter o seu nome, 
     // e principalmente o icone de assistir mais tarde e tambem deve ser exibido no lugar o icone de 
@@ -16,5 +16,5 @@ export default function MovieCard(movie) {
                 <span>{movie.title}</span>
             </a>
         </div>
-    );
+    )
 }

@@ -4,7 +4,7 @@ import MoviesBox from "../components/MoviesBox";
 import { useEffect, useState } from "react";
 
 const moviesURL = "https://api.themoviedb.org/3"  // TODO: Talvez mover para um .env
-const apiKey = import.meta.env.API_KEY;
+const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
 
 export default function Home() {
     const [popularMovies, setPolularMovies] = useState([])

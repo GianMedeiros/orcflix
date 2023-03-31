@@ -3,7 +3,7 @@ import MovieCard from "./MovieCard";
 import styles from "../styles/MoviesBox.module.css"
 
 // Recebe um array de objetos de filmes
-export default function MoviesBox(movies, isCarousel = false) {
+export default function MoviesBox({ movies, isCarousel = false }) {
     // Esse componente deve receber os filmes que serao listados e retornar um
     // container com os card de filme agrupados para usar esse componente na 
     // Tela de busca onde os cards exibidos serao os do filtro, na tela de 
