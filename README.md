@@ -14,7 +14,7 @@ Consiste um em site para a organização de filmes que satisfaz os [requisitos](
 
 4. Execute o comando abaixo para iniciar a aplicação e abri-la no navegador na porta padrão http://localhost:3000.
     ```
-    npm run dev
+    npm start
     ```
 
 ## Instruções de organização para colaboradores:
