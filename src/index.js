@@ -1,8 +1,11 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
+// Como ainda nao temos as rotas feitas o jeito mais facil de reidenizar
+//  uma das paginas é mudando o elemento no React.StrictMode
+
 import Home from './pages/Home'
-import ConfigScreen from "./pages/ConfigScreenVisual"
+import ConfigScreen from "./pages/ConfigScreenVisual";
 import LoginScreen from "./pages/LoginScreen"
 import MovieDetailScreen from "./pages/MovieDetailScreen"
 import RegistrationScreen from "./pages/RegistrationScreen"
@@ -11,7 +14,7 @@ import UserScreen from "./pages/UserScreen"
 
 import "./styles/index.css"
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
     {
