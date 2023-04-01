@@ -1,0 +1,8 @@
+button {
+    width: 150px;
+    height: 42px;
+
+    background: var(--destaque-primaria);
+    border-radius: 5px;
+    display: inline-block;
+}

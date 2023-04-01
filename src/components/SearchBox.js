@@ -1,6 +1,9 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 
+import styles from "../styles/SearchBox.module.css"
+
+
 export default function SearchBox() {
     const [querry, setQuerry] = useState("")
     const navigate = useNavigate()
@@ -13,7 +16,8 @@ export default function SearchBox() {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
+            <form className={styles.form}
+            onSubmit={handleSubmit}>
                 <input
                     placeholder="Insira um filme para pesquisar"
                     onChange={(e) => setQuerry(e.target.value)}

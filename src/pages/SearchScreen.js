@@ -1,14 +1,16 @@
 import SearchBox from "../components/SearchBox"
 import MoviesBox from "../components/MoviesBox"
 
-import { useSearchParams } from "react-router-dom"
+import styles from '../styles/SearchScreen.module.css'
+
+import { Link, useSearchParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
 
 export default function SearchScreen() {
-    const [searchParams] = useSearchParams();
-    const query = searchParams.get("q");
+    const [searchParams] = useSearchParams()
+    const query = searchParams.get("q")
     const [movies, setMovies] = useState([])
 
     const getMoviesList = (url) => {
@@ -24,14 +26,18 @@ export default function SearchScreen() {
         getMoviesList(searchedMoviesURL)
     }, [query])
 
-
     return (
         <>
+            <button
+                className={styles.botao}>
+                <Link
+                    to="/home">
+                    Home
+                </Link>
+            </button>
             <SearchBox />
-            <h1>
-                Hello tela de busca
-            </h1>
+            <h2>Mostrando resultados para: {query}</h2>
             <MoviesBox movies={movies} />
         </>
-    );
+    )
 }
