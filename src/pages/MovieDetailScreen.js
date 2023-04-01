@@ -29,7 +29,7 @@ export default function MovieDetailScreen() {
     }, [id])
 
     return (
-        movie && (
+        movie && ( 
             <>
                 <SearchBox />
                 <div className={styles.movie_box}>
