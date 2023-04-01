@@ -3,6 +3,12 @@ ele deve ser feito em um .module.css dentro da pasta stiles
 e deve ter o mesmo nome do componnete ou pagina que esta estilizando */
 
 /* Tambem va ate o componte MovieCard para verificar como a estilizacao foi chamada */
+div .card{
+    background-color: var(--fundo-claro);
+    margin: 5px;
+    border-radius: 0.3rem;
+}
+
 .card {
     height: 40vh;
     object-fit: contain;
@@ -11,10 +17,14 @@ e deve ter o mesmo nome do componnete ou pagina que esta estilizando */
 
 .card img {
     height: 80%;
+    border-radius: 0.3rem;
 }
 
 .card:hover {
+    transform: scale(0.95);
+    transition: all 0.3s ease-in-out;
+}
+
+.card span:hover {
     color: var(--destaque-primaria);
-    transform: scale(1.2);
-    transition: all 1 ease-in-out;
 }

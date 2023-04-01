@@ -1,0 +1,15 @@
+div .boxfullmovies{
+    margin: 30px;
+    background-color: var(--fundo-claro) ;
+    border-radius: 1em;
+}
+
+div .boxmovies{
+    margin: 0px 30px 0px 30px;
+    background-color: var(--fundo-escuro);
+}
+
+h2{
+    margin-left: 30px;
+    margin-bottom: 1em;
+}
