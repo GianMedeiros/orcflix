@@ -1,0 +1,20 @@
+.movies_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    overflow: scroll;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}

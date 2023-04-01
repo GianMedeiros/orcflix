@@ -1,0 +1,25 @@
+/* Esse é um exemplo de como estilizar um componte 
+ele deve ser feito em um .module.css dentro da pasta stiles
+e deve ter o mesmo nome do componnete ou pagina que esta estilizando */
+
+/* Tambem va ate o componte MovieCard para verificar como a estilizacao foi chamada */
+.card {
+    height: 40vh;
+    object-fit: contain;
+    padding: 0.4rem;
+    background-color: var(--fundo-medio);
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.card img {
+    height: 100%;
+    display: block;
+}
+
+.card:hover {
+    color: var(--destaque-primaria);
+    transform: scale(1.2);
+    transition: all 1 ease-in-out;
+}
