@@ -3,6 +3,8 @@ import MoviesBox from "../components/MoviesBox"
 
 import { useEffect, useState } from "react"
 
+import styles from '../styles/Home.module.css'
+
 const moviesURL = "https://api.themoviedb.org/3"  // TODO: Talvez mover para um .env
 const apiKey = "api_key=da2ade07e560ddc5e0e4b562abc3ce45"
 
@@ -37,14 +39,23 @@ export default function Home() {
 
     return (
         <>
-            <h1>Tela inicial</h1>
-            <SearchBox />
-            <h2>Populares</h2>
-            <MoviesBox movies={popularMovies} isCarousel={true} />
-            <h2>Ação</h2>
-            <MoviesBox movies={actionMovies} isCarousel={true} />
-            <h2>Drama</h2>
-            <MoviesBox movies={documentariesMovies} isCarousel={true} />
+            <div>
+                <SearchBox />
+            </div>
+            <div className={styles.boxfullmovies}> 
+                <h2 className={styles.nameMovies}>Populares</h2>
+                <div className={styles.boxmovies}>
+                    <MoviesBox movies={popularMovies} isCarousel={true} />
+                </div>
+                <h2 className={styles.nameMovies}>Ação</h2>
+                <div className={styles.boxmovies}>
+                    <MoviesBox movies={actionMovies} isCarousel={true} />
+                </div>
+                <h2 className={styles.nameMovies}>Drama</h2>
+                <div className={styles.boxmovies}>
+                    <MoviesBox movies={documentariesMovies} isCarousel={true} />
+                </div>
+            </div>
         </>
     )
 }

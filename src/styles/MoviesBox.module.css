@@ -14,7 +14,6 @@
     overflow: scroll;
 }
 
-
 .carousel::-webkit-scrollbar {
     display: none;
 }

@@ -29,7 +29,7 @@ export default function MovieDetailScreen() {
     }, [id])
 
     return (
-        movie && (
+        movie && ( 
             <>
                 <button
                     className={styles.botao}>
