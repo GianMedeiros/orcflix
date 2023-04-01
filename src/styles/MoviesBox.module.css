@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .carousel {
@@ -11,4 +11,10 @@
     flex-wrap: nowrap;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    overflow: scroll;
+}
+
+
+.carousel::-webkit-scrollbar {
+    display: none;
 }

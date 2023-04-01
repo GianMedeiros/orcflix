@@ -37,8 +37,8 @@ export default function Home() {
 
     return (
         <>
+            <h1>Tela inicial</h1>
             <SearchBox />
-            <h1>Hello tela inicial</h1>
             <h2>Populares</h2>
             <MoviesBox movies={popularMovies} isCarousel={true} />
             <h2>Ação</h2>

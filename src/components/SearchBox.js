@@ -1,11 +1,32 @@
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+
+import styles from "../styles/SearchBox.module.css"
+
+
 export default function SearchBox() {
-    // Esse componente deve ter a caixa de busca que deve mudar de forma. 
-    // Deve ser um icone de busca quando o usuario nao estiver pesquisando 
-    // nada mas ao ser clicado deve se tranformar em um input. Alem disso 
-    // tambem contem os elementos de filtragem da busca (Ver prototipo no figma)
+    const [querry, setQuerry] = useState("")
+    const navigate = useNavigate()
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate(`/search?q=${querry}`)
+        setQuerry("")
+    }
+
     return (
-        <p>
-            Hello caixa de busca
-        </p>
-    );
+        <>
+            <form className={styles.form}
+            onSubmit={handleSubmit}>
+                <input
+                    placeholder="Insira um filme para pesquisar"
+                    onChange={(e) => setQuerry(e.target.value)}
+                    value={querry}
+                />
+                {querry &&
+                    <button type="submit">Pesquisar</button>
+                }
+            </form>
+        </>
+    )
 }
