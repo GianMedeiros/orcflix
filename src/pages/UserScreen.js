@@ -1,4 +1,4 @@
-import MoviesBox from "../components/MoviesBox"
+// import MoviesBox from "../components/MoviesBox"
 
 export default function UserScreen() {
     return (
@@ -11,5 +11,5 @@ export default function UserScreen() {
             <MoviesBox />
             <MoviesBox /> */}
         </>
-    );
+    )
 }

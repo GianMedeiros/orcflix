@@ -5,7 +5,7 @@ import ReviewBox from "../components/ReviewBox"
 import styles from '../styles/MovieDetailScreen.module.css'
 
 
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 
 const moviesURL = "https://api.themoviedb.org/3/movie/" // TODO: Talvez mover para um .env
@@ -31,6 +31,13 @@ export default function MovieDetailScreen() {
     return (
         movie && ( 
             <>
+                <button
+                    className={styles.botao}>
+                    <Link
+                        to="/home">
+                        Home
+                    </Link>
+                </button>
                 <SearchBox />
                 <div className={styles.movie_box}>
 
@@ -63,5 +70,4 @@ export default function MovieDetailScreen() {
             </>
         )
     )
-
 }

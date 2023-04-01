@@ -12,12 +12,17 @@ div .card{
 .card {
     height: 40vh;
     object-fit: contain;
-    padding: 0.2rem;
+    padding: 0.4rem;
+    background-color: var(--fundo-medio);
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .card img {
     height: 80%;
     border-radius: 0.3rem;
+
 }
 
 .card:hover {

@@ -1,6 +1,7 @@
 # Orcflix
 Esse projeto é o desafio final feito durante o curso de capacitação em software realizado durante o processo Trainee da Orc'estra Gamificação.
 Consiste um em site para a organização de filmes que satisfaz os [requisitos](https://hackmd.io/@lulugameplays/req-projetofinal#Requisitos-não-funcionais-restrições).
+Seguindo o design feito no [Figma](https://www.figma.com/file/9TH3UDO7dyWSfrbaf5XeBb/Orcflix?node-id=24%3A209&t=3zpJTQr00IRxCm2H-1).
 
 ## Instruções para executar o projeto localmente
 1. Certifique-se de ter instalado o [Node.js](https://nodejs.org/) (Versão 18).
@@ -14,7 +15,7 @@ Consiste um em site para a organização de filmes que satisfaz os [requisitos](
 
 4. Execute o comando abaixo para iniciar a aplicação e abri-la no navegador na porta padrão http://localhost:3000.
     ```
-    npm run dev
+    npm start
     ```
 
 ## Instruções de organização para colaboradores:
