@@ -21,8 +21,13 @@ div .card{
 }
 
 .card:hover {
-    transform: scale(0.95);
-    transition: all 0.3s ease-in-out;
+    transform: scale(.95);
+    transition: all .4s ease-in-out;
+}
+
+.card span{
+    display: flex;
+    justify-content: center;
 }
 
 .card span:hover {

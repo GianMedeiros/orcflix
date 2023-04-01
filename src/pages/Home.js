@@ -52,9 +52,8 @@ export default function Home() {
                 <div className={styles.boxmovies}>
                     <MoviesBox movies={actionMovies} isCarousel={true} />
                 </div>
-                
+                <h2 className={styles.nameMovies}>Drama</h2>
                 <div className={styles.boxmovies}>
-                    <h2 className={styles.nameMovies}>Drama</h2>
                     <MoviesBox movies={documentariesMovies} isCarousel={true} />
                 </div>
             </div>
